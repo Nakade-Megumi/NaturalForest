@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//ƒ}ƒbƒvã‚Ì—v‘f‚ğƒNƒŠƒbƒN‚µ‚½‚çC“Á’è‚ÌƒCƒxƒ“ƒg‚ª”­¶‚·‚é
+//ãƒãƒƒãƒ—ä¸Šã®è¦ç´ ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ãŸã‚‰ï¼Œç‰¹å®šã®ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºç”Ÿã™ã‚‹
 public class ClickEvent : MonoBehaviour
 {
+
+    int click;
     public void OnFlower()
     {
         Debug.Log("click_event_flower");
@@ -13,6 +15,9 @@ public class ClickEvent : MonoBehaviour
     public void OnTree()
     {
         Debug.Log("click_event_tree");
+        click = 1;
+        StartEvent startEvent = gameObject.AddComponent<StartEvent>();
+        startEvent.SearchEvent(click);
     }
 
     public void OnPond()
