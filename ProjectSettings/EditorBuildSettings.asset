@@ -6,15 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Title.unity
-    guid: 75b99845ca9ac3b459177b4298a2f206
+    path: Assets/Scenes/SampleScene.unity
+    guid: 4a97b247521c5e44cbd8df8e52383f18
   - enabled: 1
-    path: Assets/Scenes/Main.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Cabin.unity
+    guid: fb0a927581030a343a36d0f1bbcc6388
   - enabled: 1
-    path: Assets/Scenes/HowToPlay.unity
-    guid: e439e40d58493694c8b3b34e8d749940
+    path: Assets/Scenes/Collection.unity
+    guid: 7349bcd8f4c3d394f9d482e6c4a54477
   - enabled: 1
-    path: Assets/Scenes/Credit.unity
-    guid: a473e0e325521084f817771f35689723
+    path: Assets/Scenes/Collection_flower.unity
+    guid: 5d8ba9f5b1b25df4a8027c180b8c17ce
+  - enabled: 1
+    path: Assets/Scenes/Collection_tree.unity
+    guid: e80a97d419ad92042812221fb71a889b
+  - enabled: 1
+    path: Assets/Scenes/Collection_sea.unity
+    guid: d14844d103975c44caa96299e746c159
+  - enabled: 1
+    path: Assets/Scenes/Collection_rever.unity
+    guid: 9974ed837bfa2904387744dd08a07137
   m_configObjects: {}
