@@ -205,7 +205,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   img: {fileID: 0}
-  texture_list: []
+  texture_list_init: []
+  texture_list_tree: []
+  texture_list_flower: []
+  texture_list_river: []
+  texture_list_sea: []
 --- !u!1 &114831821
 GameObject:
   m_ObjectHideFlags: 0
@@ -1525,7 +1529,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1834577271}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8822f168462f58f41941994f8cca3511, type: 3}

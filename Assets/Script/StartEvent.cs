@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -27,7 +28,7 @@ public class StartEvent : MonoBehaviour
                 EventFlower();
                 break;
             case 1:
-                EventTree();
+                EventTree().Forget();
                 break;
             case 2:
                 EventRiver();
@@ -35,7 +36,7 @@ public class StartEvent : MonoBehaviour
             case 3:
                 EventSea();
                 break;
-            default: 
+            default:
                 break;
         }
     }
@@ -46,13 +47,14 @@ public class StartEvent : MonoBehaviour
         initGame_flower.img.texture = initGame_flower.texture_list_flower[0];
     }
 
-    public void EventTree()
+    public async UniTask EventTree()
     {
         InitGame initGame_tree = GetInit();
         initGame_tree.img.texture = initGame_tree.texture_list_tree[0];
-        Invoke("JudgeTreeEvent",2);
+        await UniTask.Delay(2000);
+        JudgeTreeEvent(initGame_tree);
     }
-    
+
     public void EventRiver()
     {
         InitGame initGame_river = GetInit();
@@ -67,14 +69,14 @@ public class StartEvent : MonoBehaviour
 
     }
 
-    public void JudgeTreeEvent() {
-        InitGame initGame = GetInit();
+    public void JudgeTreeEvent(InitGame initGame)
+    {
         int judge = Random.Range(0, 10);
-        int card_num = Random.Range(1,4);
+        int card_num = Random.Range(1, 4);
 
         Debug.Log(judge);
 
-        if(judge == 0 || judge == 10) 
+        if (judge == 0 || judge == 10)
         {
             initGame.img.texture = initGame.texture_list_tree[7];
             Debug.Log("気合");

@@ -1,0 +1,61 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class SliderMove : MonoBehaviour
+{
+    [SerializeField] Slider slider;
+    private bool isClicked;
+    private bool maxValue;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        slider.value = 0;
+        maxValue = false;
+        isClicked = false;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && isClicked == false)
+        {
+            Debug.Log("stop");
+            isClicked = true;
+        }
+        else if (Input.GetKeyDown(KeyCode.Space) && isClicked == true)
+        {
+            Debug.Log("start");
+            isClicked = false;
+        }
+        if (isClicked)
+        {
+            if (slider.value >= 4.5 && slider.value <= 5.5)
+            {
+                Debug.Log("Great!!");
+            }
+            return;
+        }
+
+        if (slider.value == 15)
+        {
+            maxValue = true;
+        }
+        if (slider.value == 0)
+        {
+            maxValue = false;
+        }
+
+        if (maxValue == true)
+        {
+            slider.value -= 0.1f;
+        }
+
+        if (maxValue == false)
+        {
+            slider.value += 0.1f;
+        }
+    }
+}
