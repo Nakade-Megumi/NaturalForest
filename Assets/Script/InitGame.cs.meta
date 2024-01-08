@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: b0641a363bec9354da0564cc9b231f07
+=======
+guid: ce0fbce780b0b254baa2137f6a8a355c
+>>>>>>> origin/morii_v3
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

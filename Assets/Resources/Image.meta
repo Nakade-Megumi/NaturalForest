@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: eb8b6c82cea9e9e43801993d71a67438
+=======
+guid: 8a24593623b856443a772ad9f1308326
+>>>>>>> origin/morii_v3
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
