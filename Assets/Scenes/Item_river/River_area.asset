@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1a942eba782eaf4d9334851d6360d11, type: 3}
+  m_Name: River_area
+  m_EditorClassIdentifier: 
+  itemLists:
+  - {fileID: 11400000, guid: c6298c46d5f21594e934019184f6a83f, type: 2}
+  - {fileID: 11400000, guid: a1a0277028b6e0449aee43880f6fc1b8, type: 2}
+  - {fileID: 11400000, guid: b3ec72213df108347baea8f7dc4db782, type: 2}
+  - {fileID: 11400000, guid: 56f37761fc224e34682471dcc6b40ced, type: 2}
+  - {fileID: 11400000, guid: 4394e2db3b47c9d47955e176f1e35b0a, type: 2}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1a942eba782eaf4d9334851d6360d11, type: 3}
+  m_Name: Sea_area
+  m_EditorClassIdentifier: 
+  itemLists:
+  - {fileID: 11400000, guid: f7b37660fb7141e458f1e83e93dbe3c0, type: 2}
+  - {fileID: 11400000, guid: 34f09549e73861f4dacc898874352b7c, type: 2}
+  - {fileID: 11400000, guid: 2b52682cb9272e84f92ad4a30e6da7d5, type: 2}
+  - {fileID: 11400000, guid: 027d4cb8483a87744a55f998d71d38db, type: 2}
+  - {fileID: 11400000, guid: 27245558511102344acda1fbdde48bc7, type: 2}
