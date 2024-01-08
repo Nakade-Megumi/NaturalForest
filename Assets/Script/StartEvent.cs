@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class StartEvent : MonoBehaviour
 {
@@ -52,7 +53,7 @@ public class StartEvent : MonoBehaviour
         InitGame initGame_tree = GetInit();
         initGame_tree.img.texture = initGame_tree.texture_list_tree[0];
         await UniTask.Delay(2000);
-        JudgeTreeEvent(initGame_tree);
+        await JudgeTreeEvent(initGame_tree);
     }
 
     public void EventRiver()
@@ -69,17 +70,20 @@ public class StartEvent : MonoBehaviour
 
     }
 
-    public void JudgeTreeEvent(InitGame initGame)
+    public async UniTask JudgeTreeEvent(InitGame initGame)
     {
         int judge = Random.Range(0, 10);
         int card_num = Random.Range(1, 4);
 
         Debug.Log(judge);
+        //judge = 0;
 
         if (judge == 0 || judge == 10)
         {
             initGame.img.texture = initGame.texture_list_tree[7];
             Debug.Log("気合");
+            await UniTask.Delay(3000);
+            SceneManager.LoadScene("MiniGame");
         }
         else if (judge % 2 == 0)
         {
