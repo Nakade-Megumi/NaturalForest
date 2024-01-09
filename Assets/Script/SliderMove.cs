@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,6 +21,14 @@ public class SliderMove : MonoBehaviour
         isClicked = false;
     }
 
+    public InitGame GetInit()
+    {
+        InitGame init;
+        GameObject obj = GameObject.Find("EventSystem");
+        init = obj.GetComponent<InitGame>();
+        return init;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -38,6 +47,10 @@ public class SliderMove : MonoBehaviour
             if (slider.value >= succses_min && slider.value <= succses_max)
             {
                 //該当する画像を出したい
+                InitGame initGame_success = GetInit();
+                initGame_success.img.texture = initGame_success.texture_list_tree[0];
+                //await UniTask.Delay(2000);
+
                 Debug.Log("Success!");
                 SceneManager.LoadScene("Main");
 
