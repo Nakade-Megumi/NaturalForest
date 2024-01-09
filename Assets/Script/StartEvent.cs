@@ -4,6 +4,7 @@ using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class StartEvent : MonoBehaviour
 {
@@ -64,7 +65,6 @@ public class StartEvent : MonoBehaviour
         initGame_river.img.texture = initGame_river.texture_list_river[0];
         await UniTask.Delay(2000);
         await JudgeRiverEvent(initGame_river);
-
     }
 
     public async UniTask EventSea()
