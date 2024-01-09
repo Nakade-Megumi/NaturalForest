@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 //マップ上の要素をクリックするとイベント発生
 public class ClickEvent : MonoBehaviour
@@ -18,6 +19,9 @@ public class ClickEvent : MonoBehaviour
     public void OnTree()
     {
         Debug.Log("click_event_tree");
+        click = 1;
+        StartEvent startEvent = gameObject.AddComponent<StartEvent>();
+        startEvent.SearchEvent(click);
     }
 
     public void OnRiver()
@@ -40,6 +44,7 @@ public class ClickEvent : MonoBehaviour
     public void OnHouse()
     {
         Debug.Log("click_event_house");
+        SceneManager.LoadScene("Collection");
     }
 
 }
