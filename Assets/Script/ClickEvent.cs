@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-//マップ上の要素をクリックしたら，特定のイベントが発生する
+//マップ上の要素をクリックするとイベント発生
 public class ClickEvent : MonoBehaviour
 {
     int click;
-
     public void OnFlower()
     {
         Debug.Log("click_event_flower");
@@ -19,9 +18,6 @@ public class ClickEvent : MonoBehaviour
     public void OnTree()
     {
         Debug.Log("click_event_tree");
-        click = 1;
-        StartEvent startEvent = gameObject.AddComponent<StartEvent>();
-        startEvent.SearchEvent(click);
     }
 
     public void OnRiver()
