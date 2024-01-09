@@ -7,6 +7,6 @@ public class NewBehaviourScript_modorunoda : MonoBehaviour
 {
     public void OnClickStartButton_modorunoda()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Main");
     }   
 }
