@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SliderMove : MonoBehaviour
@@ -37,6 +38,8 @@ public class SliderMove : MonoBehaviour
             if (slider.value >= succses_min && slider.value <= succses_max)
             {
                 Debug.Log("Success!");
+                SceneManager.LoadScene("Main");
+
             }
             return;
         }
