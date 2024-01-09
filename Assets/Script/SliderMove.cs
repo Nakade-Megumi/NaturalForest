@@ -47,8 +47,8 @@ public class SliderMove : MonoBehaviour
             if (slider.value >= succses_min && slider.value <= succses_max)
             {
                 //該当する画像を出したい
-                InitGame initGame_success = GetInit();
-                initGame_success.img.texture = initGame_success.texture_list_tree[0];
+                //InitGame initGame_success = GetInit();
+                //initGame_success.img.texture = initGame_success.texture_list_tree[0];
                 //await UniTask.Delay(2000);
 
                 Debug.Log("Success!");
