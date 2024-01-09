@@ -37,9 +37,16 @@ public class SliderMove : MonoBehaviour
         {
             if (slider.value >= succses_min && slider.value <= succses_max)
             {
+                //該当する画像を出したい
                 Debug.Log("Success!");
                 SceneManager.LoadScene("Main");
 
+            }
+            else
+            {
+                //該当する画像を出したい
+                Debug.Log("Failed...");
+                SceneManager.LoadScene("Main");
             }
             return;
         }
