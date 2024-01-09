@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class SliderMove : MonoBehaviour
 {
     [SerializeField] Slider slider;
+    [SerializeField] float succses_min;
+    [SerializeField] float succses_max;
     private bool isClicked;
     private bool maxValue;
 
@@ -32,7 +34,7 @@ public class SliderMove : MonoBehaviour
         }
         if (isClicked)
         {
-            if (slider.value >= 3.92 && slider.value <= 5.96)
+            if (slider.value >= succses_min && slider.value <= succses_max)
             {
                 Debug.Log("Success!");
             }

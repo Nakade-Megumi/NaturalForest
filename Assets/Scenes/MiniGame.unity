@@ -444,6 +444,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 446734618}
+  succses_min: 3.92
+  succses_max: 5.96
 --- !u!1 &1100398746
 GameObject:
   m_ObjectHideFlags: 0
