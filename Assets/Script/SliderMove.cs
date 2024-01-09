@@ -32,14 +32,14 @@ public class SliderMove : MonoBehaviour
         }
         if (isClicked)
         {
-            if (slider.value >= 4.5 && slider.value <= 5.5)
+            if (slider.value >= 3.92 && slider.value <= 5.96)
             {
-                Debug.Log("Great!!");
+                Debug.Log("Success!");
             }
             return;
         }
 
-        if (slider.value == 15)
+        if (slider.value == 10)
         {
             maxValue = true;
         }

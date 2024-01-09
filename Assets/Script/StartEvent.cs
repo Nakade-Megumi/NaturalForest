@@ -26,26 +26,28 @@ public class StartEvent : MonoBehaviour
         switch (click)
         {
             case 0:
-                EventFlower();
+                EventFlower().Forget();
                 break;
             case 1:
                 EventTree().Forget();
                 break;
             case 2:
-                EventRiver();
+                EventRiver().Forget();
                 break;
             case 3:
-                EventSea();
+                EventSea().Forget();
                 break;
             default:
                 break;
         }
     }
 
-    public void EventFlower()
+    public async UniTask EventFlower()
     {
         InitGame initGame_flower = GetInit();
         initGame_flower.img.texture = initGame_flower.texture_list_flower[0];
+        await UniTask.Delay(2000);
+        await JudgeFlowerEvent(initGame_flower);
     }
 
     public async UniTask EventTree()
@@ -56,18 +58,50 @@ public class StartEvent : MonoBehaviour
         await JudgeTreeEvent(initGame_tree);
     }
 
-    public void EventRiver()
+    public async UniTask EventRiver()
     {
         InitGame initGame_river = GetInit();
         initGame_river.img.texture = initGame_river.texture_list_river[0];
+        await UniTask.Delay(2000);
+        await JudgeRiverEvent(initGame_river);
 
     }
 
-    public void EventSea()
+    public async UniTask EventSea()
     {
         InitGame initGame_sea = GetInit();
         initGame_sea.img.texture = initGame_sea.texture_list_sea[0];
+        await UniTask.Delay(2000);
+        await JudgeSeaEvent(initGame_sea);
+    }
 
+    public async UniTask JudgeFlowerEvent(InitGame initGame)
+    {
+        int judge = Random.Range(0, 10);
+        int card_num = Random.Range(1, 4);
+
+        Debug.Log(judge);
+        //judge = 0;
+
+        if (judge == 0 || judge == 10)
+        {
+            initGame.img.texture = initGame.texture_list_flower[7];
+            Debug.Log("気合");
+            await UniTask.Delay(3000);
+            SceneManager.LoadScene("MiniGame");
+        }
+        else if (judge % 2 == 0)
+        {
+            initGame.img.texture = initGame.texture_list_flower[card_num];
+            Debug.Log("Success!");
+            Debug.Log(card_num);
+        }
+        else
+        {
+            initGame.img.texture = initGame.texture_list_flower[6];
+            Debug.Log("Failed...");
+        }
+        Invoke("ShowInit", 3);
     }
 
     public async UniTask JudgeTreeEvent(InitGame initGame)
@@ -94,6 +128,64 @@ public class StartEvent : MonoBehaviour
         else
         {
             initGame.img.texture = initGame.texture_list_tree[6];
+            Debug.Log("Failed...");
+        }
+        Invoke("ShowInit", 3);
+    }
+
+    public async UniTask JudgeRiverEvent(InitGame initGame)
+    {
+        int judge = Random.Range(0, 10);
+        int card_num = Random.Range(1, 4);
+
+        Debug.Log(judge);
+        //judge = 0;
+
+        if (judge == 0 || judge == 10)
+        {
+            initGame.img.texture = initGame.texture_list_river[7];
+            Debug.Log("気合");
+            await UniTask.Delay(3000);
+            SceneManager.LoadScene("MiniGame_2");
+        }
+        else if (judge % 2 == 0)
+        {
+            initGame.img.texture = initGame.texture_list_river[card_num];
+            Debug.Log("Success!");
+            Debug.Log(card_num);
+        }
+        else
+        {
+            initGame.img.texture = initGame.texture_list_river[6];
+            Debug.Log("Failed...");
+        }
+        Invoke("ShowInit", 3);
+    }
+
+    public async UniTask JudgeSeaEvent(InitGame initGame)
+    {
+        int judge = Random.Range(0, 10);
+        int card_num = Random.Range(1, 4);
+
+        Debug.Log(judge);
+        //judge = 0;
+
+        if (judge == 0 || judge == 10)
+        {
+            initGame.img.texture = initGame.texture_list_sea[7];
+            Debug.Log("気合");
+            await UniTask.Delay(3000);
+            SceneManager.LoadScene("MiniGame_2");
+        }
+        else if (judge % 2 == 0)
+        {
+            initGame.img.texture = initGame.texture_list_sea[card_num];
+            Debug.Log("Success!");
+            Debug.Log(card_num);
+        }
+        else
+        {
+            initGame.img.texture = initGame.texture_list_sea[6];
             Debug.Log("Failed...");
         }
         Invoke("ShowInit", 3);
