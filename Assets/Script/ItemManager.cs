@@ -20,6 +20,9 @@ public class ItemManager : MonoBehaviour {
     // UI Image component for displaying an image
     public Image imageDisplay;
 
+    //要素の単位
+    public string unit;
+
 	// Use this for initialization
 	void Start () {
 
@@ -27,7 +30,7 @@ public class ItemManager : MonoBehaviour {
         // アイテム数を適当に設定
         numOfItem.Add (itemDataBase.GetItemLists() [i], i);
         // 確認の為データ出力
-        string log = itemDataBase.GetItemLists()[i].GetItemName() + ": " + itemDataBase.GetItemLists()[i].GetQuantity() + "コ" + "\n";
+        string log = itemDataBase.GetItemLists()[i].GetItemName() + ": " + itemDataBase.GetItemLists()[i].GetQuantity() + unit + "\n";
         Debug.Log(log);
 
         // Canvasにテキストを表示
