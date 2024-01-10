@@ -175,6 +175,7 @@ MonoBehaviour:
   itemDataBase: {fileID: 11400000, guid: 72f0c95166a282248be2d28b4cf0f742, type: 2}
   logText: {fileID: 1959602575}
   imageDisplay: {fileID: 0}
+  unit: "\u30B3"
 --- !u!222 &314713681
 CanvasRenderer:
   m_ObjectHideFlags: 0
