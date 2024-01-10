@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Collection_tree.unity
     guid: e80a97d419ad92042812221fb71a889b
   - enabled: 1
-    path: Assets/Scenes/Collection_rever.unity
+    path: Assets/Scenes/Collection_river.unity
     guid: 9974ed837bfa2904387744dd08a07137
   - enabled: 1
     path: Assets/Scenes/Collection_sea.unity
