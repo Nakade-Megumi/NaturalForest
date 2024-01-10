@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cherry
   m_EditorClassIdentifier: 
   kindOfItem: 0
-  icon: {fileID: 21300000, guid: 70b941978d3c87444b40a24c6a1e9d89, type: 3}
+  icon: {fileID: 21300000, guid: 4ad27b3d8ca024b428828cc7db6e855f, type: 3}
   itemName: "\u3055\u304F\u3089\u3093\u307C"
   information: "\u8D64\u3044\u7269\u4F53"
   quantity: 1

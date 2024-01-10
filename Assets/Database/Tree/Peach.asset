@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Peach
   m_EditorClassIdentifier: 
   kindOfItem: 0
-  icon: {fileID: 21300000, guid: 23a3afccda247814aaa6baf9dd7104a2, type: 3}
+  icon: {fileID: 21300000, guid: 5c62ce3ded2126c4fae46f87ae436bdc, type: 3}
   itemName: "\u3082\u3082"
   information: "\u30D4\u30F3\u30AF\u306E\u7269\u4F53"
   quantity: 6

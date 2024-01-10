@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Scallop
   m_EditorClassIdentifier: 
   kindOfItem: 2
-  icon: {fileID: 21300000, guid: 915525d0cafc7dd478a3ed467da778f5, type: 3}
+  icon: {fileID: 21300000, guid: a626ffe74c810bc48a8ca5a470e6dbec, type: 3}
   itemName: "\u30DB\u30BF\u30C6"
   information: "\u8C9D"
   quantity: 2

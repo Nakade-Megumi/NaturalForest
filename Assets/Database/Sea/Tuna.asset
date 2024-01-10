@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Tuna
   m_EditorClassIdentifier: 
   kindOfItem: 2
-  icon: {fileID: 21300000, guid: dcb923ac43031a444871237a11c91283, type: 3}
+  icon: {fileID: 21300000, guid: 118da431313bd004188b0ea69b7e38a0, type: 3}
   itemName: "\u30DE\u30B0\u30ED"
   information: "\u30C4\u30CA"
   quantity: 3

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Salmon
   m_EditorClassIdentifier: 
   kindOfItem: 3
-  icon: {fileID: 21300000, guid: 02b1f627687d7344abf0b20b732442f9, type: 3}
+  icon: {fileID: 21300000, guid: 5c8d6c490ce55cb4fa20c7e0840ee27d, type: 3}
   itemName: "\u30B5\u30FC\u30E2\u30F3"
   information: "\u30AA\u30EC\u30F3\u30B8\u306E\u9B5A"
   quantity: 2

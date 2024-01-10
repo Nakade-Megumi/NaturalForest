@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Honey
   m_EditorClassIdentifier: 
   kindOfItem: 0
-  icon: {fileID: 21300000, guid: b946f568eb177c94bb058684f4876a4e, type: 3}
+  icon: {fileID: 21300000, guid: 125ad4992c20b7a40a9efdf7a1504331, type: 3}
   itemName: "\u306F\u3061\u307F\u3064"
   information: "\u3042\u307E\u3044"
   quantity: 5

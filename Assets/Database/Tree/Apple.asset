@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Apple
   m_EditorClassIdentifier: 
   kindOfItem: 0
-  icon: {fileID: 21300000, guid: 4702b5cb2f275494b933116c3cc8d500, type: 3}
+  icon: {fileID: 21300000, guid: f06f29cf5b93eeb4fa0df991e03a9d66, type: 3}
   itemName: "\u308A\u3093\u3054"
   information: "\u8D64\u3044\u7269\u4F53"
   quantity: 2

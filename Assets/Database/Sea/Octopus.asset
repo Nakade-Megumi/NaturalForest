@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Octopus
   m_EditorClassIdentifier: 
   kindOfItem: 2
-  icon: {fileID: 21300000, guid: fc625af4200fe604491024840158ce8f, type: 3}
+  icon: {fileID: 21300000, guid: bd2e6d4d8ee74134198f336a7cc0e74b, type: 3}
   itemName: "\u30BF\u30B3"
   information: "8\u672C\u8DB3"
   quantity: 5

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Eel
   m_EditorClassIdentifier: 
   kindOfItem: 3
-  icon: {fileID: 21300000, guid: ad3236a9bd12ba849a1d2989dbe1d0f9, type: 3}
+  icon: {fileID: 21300000, guid: d1369b81d218c87488136573c5f751da, type: 3}
   itemName: "\u3046\u306A\u304E"
   information: "\u306B\u3087\u308D\u306B\u3087\u308D"
   quantity: 5

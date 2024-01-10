@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Rainbow trout
   m_EditorClassIdentifier: 
   kindOfItem: 3
-  icon: {fileID: 21300000, guid: 9b7dee192f3d22f44b8f22fbc5569ce1, type: 3}
+  icon: {fileID: 21300000, guid: 88e01131dd279664c9bb8cb05ba617a5, type: 3}
   itemName: "\u30CB\u30B8\u30DE\u30B9"
   information: "\u30A2\u30E6\u307F\u305F\u3044\u306A\u5DDD\u9B5A"
   quantity: 1
