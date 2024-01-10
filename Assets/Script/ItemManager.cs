@@ -27,7 +27,7 @@ public class ItemManager : MonoBehaviour {
         // アイテム数を適当に設定
         numOfItem.Add (itemDataBase.GetItemLists() [i], i);
         // 確認の為データ出力
-        string log = itemDataBase.GetItemLists()[i].GetItemName() + ": " + itemDataBase.GetItemLists()[i].GetQuantity() + "\n";
+        string log = itemDataBase.GetItemLists()[i].GetItemName() + ": " + itemDataBase.GetItemLists()[i].GetQuantity() + "コ" + "\n";
         Debug.Log(log);
 
         // Canvasにテキストを表示
