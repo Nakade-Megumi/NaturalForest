@@ -7,6 +7,6 @@ public class NewBehaviourScript_collection_rever : MonoBehaviour
 {
     public void OnClickStartButton_collection_rever()
     {
-        SceneManager.LoadScene("Collection_rever");
+        SceneManager.LoadScene("Collection_river");
     }   
 }
