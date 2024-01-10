@@ -168,7 +168,7 @@ public class StartEvent : MonoBehaviour
         int card_num = Random.Range(1, 4);
 
         Debug.Log(judge);
-        //judge = 0;
+        judge = 0;
 
         if (judge == 0 || judge == 10)
         {
