@@ -44,7 +44,8 @@ public class ClickEvent : MonoBehaviour
     public void OnHouse()
     {
         Debug.Log("click_event_house");
-        SceneManager.LoadScene("Collection");
+        //SceneManager.LoadScene("Collection");
+        this.transform.localPosition = new Vector2(-2000, 0);
     }
 
 }

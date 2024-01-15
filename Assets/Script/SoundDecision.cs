@@ -5,8 +5,23 @@ using UnityEngine;
 
 public class SoundDecision : MonoBehaviour
 {
-    public AudioClip sound_decision;
+    public AudioClip sound_se;
     AudioSource audioSource;
+
+    public static SoundDecision Instance {
+        get; private set;
+    }
+
+    void Awake()
+    {
+        if(Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
 
     void Start()
     {
@@ -17,6 +32,6 @@ public class SoundDecision : MonoBehaviour
     public void OnDecision()
     {
         //音を鳴らす
-        audioSource.PlayOneShot(sound_decision);
+        audioSource.PlayOneShot(sound_se);
     }
 }
