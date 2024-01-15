@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 public class UpdateDatabase : MonoBehaviour
 {
@@ -14,7 +15,6 @@ public class UpdateDatabase : MonoBehaviour
     public void IncrementNum(int item_num)
     {  
         itemDataBase.GetItemLists()[item_num].Quantity = itemDataBase.GetItemLists()[item_num].GetQuantity() + 1;
-        Debug.Log(itemDataBase.GetItemLists()[item_num].Quantity);
+        Debug.Log(itemDataBase.GetItemLists()[item_num].GetItemName() + ": "+ itemDataBase.GetItemLists()[item_num].Quantity);
     }
-
 }

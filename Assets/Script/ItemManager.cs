@@ -28,12 +28,12 @@ public class ItemManager : MonoBehaviour {
 
 		for (int i = 0; i < itemDataBase.GetItemLists().Count; i++) {
         // アイテム数を適当に設定
-        numOfItem.Add (itemDataBase.GetItemLists() [i], i);
+        //numOfItem.Add (itemDataBase.GetItemLists() [i], i);
         // 確認の為データ出力
         string log = itemDataBase.GetItemLists()[i].GetItemName() + ": " + itemDataBase.GetItemLists()[i].GetQuantity() + unit + "\n";
         Debug.Log(log);
         //Debug.Log(numOfItem);
-        Debug.Log(itemDataBase.GetItemLists()[i]);
+        //Debug.Log(itemDataBase.GetItemLists()[i]);
 
         // Canvasにテキストを表示
         DisplayLog(log);

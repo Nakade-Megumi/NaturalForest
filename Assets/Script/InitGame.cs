@@ -17,11 +17,12 @@ public class InitGame : MonoBehaviour
 
     //　アイテムデータベース
     [SerializeField]
-    private ItemDataBase itemDataBase;
+    private ItemDataBase itemDataBase_flower;
 
     //　アイテム数管理
-    private Dictionary<Item, int> numOfItem = new Dictionary<Item, int>();
+    //private Dictionary<Item, int> numOfItem = new Dictionary<Item, int>();
 
+    public Text logText;
 
     void Start()
     {
@@ -29,18 +30,8 @@ public class InitGame : MonoBehaviour
         //画像を読み込む
         ReadImg();
         //Debug.Log(texture_list_tree[0]);
-
-        //データベース
-        for (int i = 0; i < itemDataBase.GetItemLists().Count; i++)
-        {
-            // アイテム数を適当に設定
-            numOfItem.Add(itemDataBase.GetItemLists()[i], i);
-            // 確認の為データ出力
-            string log = itemDataBase.GetItemLists()[i].GetItemName() + ": " + itemDataBase.GetItemLists()[i].GetQuantity();
-            Debug.Log(log);
-            //Debug.Log(numOfItem);
-            Debug.Log(itemDataBase.GetItemLists()[i]);
-        }
+        InitDatabase();
+        Debug.Assert(itemDataBase_flower);
     }
 
     public void ReadImg()
@@ -82,4 +73,32 @@ public class InitGame : MonoBehaviour
             i= 0;
         }
     }
+
+    //DBの初期化
+    public void InitDatabase()
+    {
+        //データベース
+        for (int i = 0; i < itemDataBase_flower.GetItemLists().Count; i++)
+        {
+            // アイテム数を適当に設定
+            //numOfItem.Add(itemDataBase.GetItemLists()[i], i);
+            // 確認の為データ出力
+            string log = itemDataBase_flower.GetItemLists()[i].GetItemName() + ": " + itemDataBase_flower.GetItemLists()[i].GetQuantity();
+            Debug.Log(log);
+            //Debug.Log(numOfItem);
+            Debug.Log(itemDataBase_flower.GetItemLists()[i]);
+            DisplayLog(itemDataBase_flower.GetItemLists()[i].GetItemName() + ": " + itemDataBase_flower.GetItemLists()[i].GetQuantity() + "\n");
+
+        }
+
+    }
+
+    void DisplayLog(string log)
+    {
+        if (logText != null)
+        {
+            logText.text += log + "\n"; // Append new log with a new line
+        }
+    }
+
 }

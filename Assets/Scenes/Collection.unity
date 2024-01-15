@@ -1465,7 +1465,7 @@ GameObject:
   - component: {fileID: 1877502278}
   - component: {fileID: 1877502281}
   m_Layer: 5
-  m_Name: Button_rever
+  m_Name: Button_river
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
