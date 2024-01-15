@@ -16,4 +16,4 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 69ad866f4af0b134ebe853ec9f1f1710, type: 3}
   itemName: "\u83DC\u306E\u82B1"
   information: "\u9EC4\u8272\u3044\u82B1"
-  quantity: 5
+  quantity: 0

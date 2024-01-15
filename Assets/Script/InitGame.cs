@@ -15,12 +15,32 @@ public class InitGame : MonoBehaviour
     public List<Texture> texture_list_river = new List<Texture>();
     public List<Texture> texture_list_sea = new List<Texture>();
 
+    //　アイテムデータベース
+    [SerializeField]
+    private ItemDataBase itemDataBase;
+
+    //　アイテム数管理
+    private Dictionary<Item, int> numOfItem = new Dictionary<Item, int>();
+
+
     void Start()
     {
         img = GameObject.Find("DisplayImage").GetComponent<RawImage>();
         //画像を読み込む
         ReadImg();
         //Debug.Log(texture_list_tree[0]);
+
+        //データベース
+        for (int i = 0; i < itemDataBase.GetItemLists().Count; i++)
+        {
+            // アイテム数を適当に設定
+            numOfItem.Add(itemDataBase.GetItemLists()[i], i);
+            // 確認の為データ出力
+            string log = itemDataBase.GetItemLists()[i].GetItemName() + ": " + itemDataBase.GetItemLists()[i].GetQuantity();
+            Debug.Log(log);
+            //Debug.Log(numOfItem);
+            Debug.Log(itemDataBase.GetItemLists()[i]);
+        }
     }
 
     public void ReadImg()

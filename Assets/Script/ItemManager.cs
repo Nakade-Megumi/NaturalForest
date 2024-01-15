@@ -32,6 +32,8 @@ public class ItemManager : MonoBehaviour {
         // 確認の為データ出力
         string log = itemDataBase.GetItemLists()[i].GetItemName() + ": " + itemDataBase.GetItemLists()[i].GetQuantity() + unit + "\n";
         Debug.Log(log);
+        //Debug.Log(numOfItem);
+        Debug.Log(itemDataBase.GetItemLists()[i]);
 
         // Canvasにテキストを表示
         DisplayLog(log);
@@ -53,6 +55,7 @@ public class ItemManager : MonoBehaviour {
     }
 
     // Method to display image in the UI Image
+    /*
     void DisplayImage(string imagePath)
     {
         if (imageDisplay != null)
@@ -65,5 +68,5 @@ public class ItemManager : MonoBehaviour {
             }
         }
     }
-
+    */
 }

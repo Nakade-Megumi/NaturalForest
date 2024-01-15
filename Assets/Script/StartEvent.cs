@@ -95,6 +95,10 @@ public class StartEvent : MonoBehaviour
             initGame.img.texture = initGame.texture_list_flower[card_num];
             Debug.Log("Success!");
             Debug.Log(card_num);
+            UpdateDatabase updateDatabase;
+            GameObject obj = GameObject.Find("EventSystem");
+            updateDatabase = obj.GetComponent<UpdateDatabase>();
+            updateDatabase.IncrementNum(card_num - 1);
         }
         else
         {
