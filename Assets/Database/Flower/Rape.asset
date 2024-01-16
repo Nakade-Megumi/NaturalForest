@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kindOfItem: 1
   itemName: "\u30A2\u30D6\u30E9\u30CA"
-  quantity: 2
+  quantity: 0
