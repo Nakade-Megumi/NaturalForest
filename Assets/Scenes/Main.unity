@@ -491,7 +491,7 @@ MonoBehaviour:
   texture_list_flower: []
   texture_list_river: []
   texture_list_sea: []
-  itemDataBase: {fileID: 0}
+  itemDataBase_flower: {fileID: 0}
   logText: {fileID: 0}
 --- !u!114 &108167653
 MonoBehaviour:
@@ -930,18 +930,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1364057786}
-        m_TargetAssemblyTypeName: SoundDecision, Assembly-CSharp
-        m_MethodName: OnDecision
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 576639007}
         m_TargetAssemblyTypeName: ClickEvent, Assembly-CSharp
         m_MethodName: OnSea
@@ -2039,7 +2027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7123895948741082333, guid: 78b3fc09e2fa18149a2201a42298897b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7123895948741082333, guid: 78b3fc09e2fa18149a2201a42298897b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -2048,7 +2036,7 @@ PrefabInstance:
     - target: {fileID: 7123895948741082333, guid: 78b3fc09e2fa18149a2201a42298897b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1968998729}
+      objectReference: {fileID: 576639007}
     - target: {fileID: 7123895948741082333, guid: 78b3fc09e2fa18149a2201a42298897b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -2059,7 +2047,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7123895948741082333, guid: 78b3fc09e2fa18149a2201a42298897b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnDecision
+      value: OnBack
       objectReference: {fileID: 0}
     - target: {fileID: 7123895948741082333, guid: 78b3fc09e2fa18149a2201a42298897b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -2067,7 +2055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7123895948741082333, guid: 78b3fc09e2fa18149a2201a42298897b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SoundDecision, Assembly-CSharp
+      value: ClickEvent, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7123895948741082333, guid: 78b3fc09e2fa18149a2201a42298897b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -2577,18 +2565,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1364057786}
-        m_TargetAssemblyTypeName: SoundDecision, Assembly-CSharp
-        m_MethodName: OnDecision
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 576639007}
         m_TargetAssemblyTypeName: ClickEvent, Assembly-CSharp
         m_MethodName: OnTree
@@ -2804,17 +2780,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28eee1ea173a7254984448973d555447, type: 3}
---- !u!114 &1364057786 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 768713109331425642, guid: 28eee1ea173a7254984448973d555447, type: 3}
-  m_PrefabInstance: {fileID: 1364057785}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 295ff197cdf56aa44970e5af67cd1c6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1389488162
 GameObject:
   m_ObjectHideFlags: 0
@@ -3302,18 +3267,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1364057786}
-        m_TargetAssemblyTypeName: SoundDecision, Assembly-CSharp
-        m_MethodName: OnDecision
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 576639007}
         m_TargetAssemblyTypeName: ClickEvent, Assembly-CSharp
         m_MethodName: OnFlower
@@ -3561,18 +3514,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1364057786}
-        m_TargetAssemblyTypeName: SoundDecision, Assembly-CSharp
-        m_MethodName: OnDecision
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 576639007}
         m_TargetAssemblyTypeName: ClickEvent, Assembly-CSharp
         m_MethodName: OnHouse
@@ -3979,17 +3920,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03c7ea1f443fc2941a80aedf1d325dd0, type: 3}
---- !u!114 &1968998729 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1465674355135163144, guid: 03c7ea1f443fc2941a80aedf1d325dd0, type: 3}
-  m_PrefabInstance: {fileID: 1968998728}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 295ff197cdf56aa44970e5af67cd1c6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2138804489
 GameObject:
   m_ObjectHideFlags: 0
@@ -4122,18 +4052,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1364057786}
-        m_TargetAssemblyTypeName: SoundDecision, Assembly-CSharp
-        m_MethodName: OnDecision
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -4142,5 +4060,5 @@ SceneRoots:
   - {fileID: 389710016}
   - {fileID: 108167651}
   - {fileID: 1834577273}
-  - {fileID: 1968998728}
   - {fileID: 1364057785}
+  - {fileID: 1968998728}
